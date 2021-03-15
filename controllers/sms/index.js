@@ -2,8 +2,8 @@ const AWS = require('aws-sdk');
 
 
 const credentials = {
-    id: "AKIA5FEXHWPMJKNRFQ7D",
-    key_secret: "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"
+    id: "AKIA5FEXHWPMJKNRFQ7DA",
+    key_secret: "pkphiWboxS5RnVtcKqQDljV1U5HWTLT4bbBLcgMRa"
 
 }
 
