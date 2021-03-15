@@ -32,15 +32,15 @@ exports.sendMsgOrEmail = async function (req, res, next) {
       const { type } = req.body;
       if (type === 'sms') {
         const { message, phone } = req.body;
-        let dataRes = await sendSMS(message, phone);
+        let dataRes =  sendSMS(message, phone);
         console.log(dataRes);
-        await res.json(dataRes);
+         res.json(dataRes);
       } else if (type === 'email') {
-        const respData = await mail.sendEmail(req, res, next);
+        const respData =  mail.sendEmail(req, res, next);
         //  res.setHeader('Content-Type', 'application/x-www-form-urlencoded');        
-        await res.json(respData);
+         res.json(respData);
       } else {
-        await res.send('App send msg  servicio de comunicaciones')
+         res.send('App send msg  servicio de comunicaciones')
       }
     }
   });
@@ -53,12 +53,12 @@ exports.infoSendMgsAndEmail = async function (req, res, next) {
     } else {
       /*** send  SMS*/
       const { message, phone } = req.body;
-      let dataRes = await sendSMS(message, phone);
+      let dataRes =  sendSMS(message, phone);
       console.log(dataRes);
-      await res.json(dataRes);
+       res.json(dataRes);
 
       /***** SEND EMAIL */
-      await res.json({
+       res.json({
         info: 'mensajes enviado',
         phone: '',
         email: 'en'
@@ -73,7 +73,7 @@ exports.infoSendEmail = async (req, resp, next) => {
     if (err) {
       res.sendStatus(403);
     } else {
-      await mail.sendEmail(req, resp, next);
+       mail.sendEmail(req, resp, next);
     }
   });
 };
@@ -83,7 +83,7 @@ exports.infoSendCountEmail = async (req, resp, next) => {
     if (err) {
       res.sendStatus(403);
     } else {
-      await mail.countEmail(req, resp, next);
+       mail.countEmail(req, resp, next);
     }
   });
 };
@@ -94,7 +94,7 @@ exports.infoSendCountSMS =
       if (err) {
         res.sendStatus(403);
       } else {
-        await sms.countSMS(req, resp, next);
+         sms.countSMS(req, resp, next);
       }
     });
   };
