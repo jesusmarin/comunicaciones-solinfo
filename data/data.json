@@ -1,0 +1,109 @@
+{
+    "user": {
+        "_id": "",
+        "username": "",
+        "password": "",
+        "email": "",
+        "isEnabled": true,
+        "created": 1613749143,
+        "usuario": {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "geo": "",
+            "observation": ""
+        }
+    },
+    "infoSend": {
+        "_id": "",
+        "usuarioId": "",
+        "date": 1613749143,
+        "entidad": "",
+        "modulo": "",
+        "accion": "",
+        "operator": "",
+        "endPoint": "",
+        "other": "",
+        "sms": [
+            {
+                "send": 123645487,
+                "phone": "",
+                "sms": ""
+            },
+            {
+                "send": 123645497,
+                "phone": "",
+                "sms": ""
+            }
+        ],
+        "email": [
+            {
+                "send": 123645487,
+                "from": "",
+                "subject": "",
+                "name": "",
+                "phone": "",
+                "message": "",
+                "attachment": {
+                    "fileOne": "",
+                    "fileTwo": "",
+                    "fileThree": "",
+                    "fileFour": "",
+                    "fileFive": "",
+                    "fileSix": ""
+                }
+            },
+            {
+                "send": 123645497,
+                "from": "",
+                "subject": "",
+                "name": "",
+                "phone": "",
+                "message": "",
+                "attachment": {
+                    "fileOne": "",
+                    "fileTwo": "",
+                    "fileThree": "",
+                    "fileFour": "",
+                    "fileFive": "",
+                    "fileSix": ""
+                }
+            }
+        ]
+    },
+    "account": {
+        "_id": "",
+        "usuarioId": "",
+        "authorization": {
+            "isEnabled": true,
+            "startDate": 1613749143,
+            "endingDate": 1613749143
+        },
+        "balance": {
+            "available": 250000.00,
+            "sendSms": 12,
+            "sendEmail": 1245
+        },
+        "payments": [
+            {
+                "date": 1613749143,
+                "amount": 1000.50,
+                "spent": 980.50,
+                "reference": "",
+                "information": "",
+                "code": "",
+                "numberCard":""
+            }
+        ],
+        "methodPay": [
+            {
+                "number": "",
+                "person": "",
+                "date": "",
+                "code": "",
+                "optionFirst": true,
+                "isEnable":true
+            }
+        ]
+    }
+}

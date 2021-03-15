@@ -1,0 +1,14 @@
+[
+    {
+        "init":"yarn init",
+        "express":"yarn add express",
+        "nodemon":"npm install --save-dev nodemon",
+        "aws":"yarn add aws-sdk",
+        "nodemailar":"yarn add nodemailer",
+        "jsonwebtoken":"yarn add jsonwebtoken",
+        "dotenv":"yarn add dotenv",
+        "fetch":"yarn add fetch",
+        "mongoose":"npm install mongoose@5.11.15",
+        "babel-preset-es2015":"npm install babel-cli babel-preset-es2015  --save-dev"
+    }
+]
