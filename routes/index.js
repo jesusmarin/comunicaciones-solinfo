@@ -52,7 +52,7 @@ module.exports =  () => {
   router.post('/api/account', verifyToken,  Account.editarAccount);
   
   //Editar Acount en push payments (agrega nuevo cargo a saldo en balance.avalaible, balance.sendSms :0, balance.sendEmail:0 )
-  router.post('/api/account/payments', verifyToken, Account.newPayment);
+  router.post('/api/account/payments', verifyToken,  Account.newPayment);
   
   //Editar Acount en push methodPay [] agrega una tarjeta de pago electrónico tarjeta de crédito
   router.post('/api/account/methodPay', verifyToken, Account.newCreditCard);
