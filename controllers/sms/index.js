@@ -1,9 +1,10 @@
 const AWS = require('aws-sdk');
+require("dotenv").config({ path: ".env" });
 
 
 const credentials = {
-    id: "AKA",
-    key_secret: "pkpa"
+    id: process.env.credentials_id,
+    key_secret: process.env.credentials_key_secret
 
 }
 
